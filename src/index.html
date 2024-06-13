@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ test with speech to text</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1> MCQ test with speech to text </h1>
+    <div id="app">
+        <div class="question">
+          <p>الآية: بسم الله الرحمن<span id="dotted-word"> ____ </span></p>
+          <ol>
+            <p>1. الرحيم</p> 
+            <p>2. التواب</p>
+            <p>3. الكريم</p>
+          </ol>
+        </div>
+      </div>
+    <div class="container">
+        <button id="start-btn">Start Recording <i class="fas fa-microphone-alt"></i></button>
+        <div id="output"></div>
+    </div>
+    <audio id="incorrect-audio" style="margin-top: 20px">
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
